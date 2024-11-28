@@ -1,0 +1,109 @@
+/* Estilos CSS para página de cálculo de IMC voltada ao público de um hospital */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ee; /* Verde suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cde4d2; /* Verde suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__texto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container__texto h1 {
+    font-size: 1.8em;
+    color: #2e7d62; /* Verde escuro */
+}
+
+.container__texto .texto__paragrafo {
+    font-size: 1em;
+    color: #555;
+}
+
+.container__informacoes {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1em;
+    color: #2e7d62; /* Verde escuro */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.container__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #cde4d2; /* Verde suave */
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.container__input:focus {
+    border-color: #2e7d62; /* Verde escuro */
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 125, 98, 0.5);
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container__botao {
+    background-color: #2e7d62; /* Verde escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container__botao:hover {
+    background-color: #225941; /* Verde mais escuro */
+}
+
+.container__botao:active {
+    background-color: #193d2b; /* Verde ainda mais escuro */
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .container__texto h1 {
+        font-size: 1.5em;
+    }
+
+    .container__input, .container__botao {
+        font-size: 0.9em;
+    }
+}
